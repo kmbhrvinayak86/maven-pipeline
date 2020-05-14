@@ -3,7 +3,7 @@ pipeline
 agent any
 stages
     { 
-      stage ('print hello')
+      stage ('please print hello')
         { steps
             { 
                 sh 'echo Hello' 
