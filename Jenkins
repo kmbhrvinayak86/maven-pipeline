@@ -3,7 +3,9 @@ pipeline
 node any
 stages
     { 
-    steps('print Hello World!')
-    sh 'echo "Hello World"'
-       }
+      stage ('print hello')
+        { steps
+            { sh echo Hello }
+        } 
+    }
  }
