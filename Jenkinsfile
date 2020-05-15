@@ -6,7 +6,7 @@ stages
       stage ('please print hello')
         { steps
             { 
-                sh ( '''#!C:\Program Files\Git\bin\bash.exe
+                sh ( '''#!c:\Program Files\Git\bin
                 "echo Hello"
                  '''   )
              } 
