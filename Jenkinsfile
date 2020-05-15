@@ -5,8 +5,10 @@ stages
     { 
       stage ('please print hello')
         { steps
-            { '''#!c:\path\to\bash.exe
-                sh 'echo Hello' 
+            { 
+                sh ('''#!c:\path\to\bash.exe 
+                    "echo Hello"
+                    ''')
             }
         } 
     }
